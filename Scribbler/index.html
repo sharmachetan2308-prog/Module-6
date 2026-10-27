@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scribbler - Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montez&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="home-page">
+<header class="site-header">
+  <div class="brand-wrap">
+    <a class="brand" href="index.html">Scribbler</a>
+    <div class="tagline">Explore, Imagine, Create</div>
+  </div>
+  <div class="header-actions">
+    <button class="btn btn-blue" data-modal="signupModal">Sign Up</button>
+    <button class="btn btn-blue" data-modal="signinModal">Sign In</button>
+  </div>
+</header>
+
+<main class="hero">
+  <div class="hero-buttons">
+    <a class="btn btn-yellow" href="html/postslist.html">All Posts</a>
+    <button class="btn btn-yellow" data-modal="createPostModal">Create Post</button>
+  </div>
+</main>
+
+<div class="modal" id="signinModal" aria-hidden="true">
+  <div class="modal-card">
+    <button class="close" data-close>&times;</button>
+    <h2>Welcome Back!</h2>
+    <form data-demo-form>
+      <label>Username</label><input required type="text" placeholder="Enter Username">
+      <label>Password</label><input required type="password" placeholder="Enter Password">
+      <button class="btn btn-green full" type="submit">Sign In</button>
+    </form>
+    <p class="switch-text">Not a member? <button class="link-btn" data-switch="signupModal">Sign Up</button></p>
+  </div>
+</div>
+
+<div class="modal" id="signupModal" aria-hidden="true">
+  <div class="modal-card">
+    <button class="close" data-close>&times;</button>
+    <h2>Get Started</h2>
+    <form data-demo-form>
+      <label>Full Name</label><input required type="text" placeholder="Enter Full Name">
+      <label>Username</label><input required type="text" placeholder="Enter Username">
+      <label>Password</label><input required type="password" placeholder="Enter Password">
+      <label>Confirm Password</label><input required type="password" placeholder="Confirm Password">
+      <button class="btn btn-green full" type="submit">Sign Up</button>
+    </form>
+  </div>
+</div>
+
+<div class="modal" id="createPostModal" aria-hidden="true">
+  <div class="modal-card create-card">
+    <button class="close" data-close>&times;</button>
+    <h2>Create New Post</h2>
+    <form data-create-post>
+      <label>Title</label><input required type="text" id="newTitle" placeholder="Enter post title">
+      <label>Contents</label><textarea required id="newBody" rows="7" placeholder="Write your post here..."></textarea>
+      <button class="btn btn-green full" type="submit">Create Post</button>
+    </form>
+  </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scribbler - Post</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montez&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"><link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="brand-wrap"><a class="brand" href="../index.html">Scribbler</a><div class="tagline">Explore, Imagine, Create</div></div><div class="header-actions"><button class="btn btn-blue" data-modal="signinModal">Sign In</button><button class="btn btn-blue" data-modal="signupModal">Sign Up</button></div></header>
+<main class="single-page">
+  <h1 id="singleTitle">‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</h1>
+  <div class="single-author"><span id="singleAuthor">Srishti Gupta</span><button class="btn btn-red" id="editBtn">Edit <i class="fa-solid fa-pen"></i></button></div>
+  <div class="single-body" id="singleBody"><p>Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p><p>The <b>let</b> keyword allows you to declare a variable that can be reassigned. The <b>const</b> keyword is used when the binding should not be reassigned, while <b>var</b> follows older JavaScript scoping rules.</p></div>
+  <div class="likes"><button class="btn btn-red" id="likeBtn"><i class="fa-solid fa-thumbs-up"></i> <span>Like</span></button><span id="likeCount">Be the first one to like this!</span></div>
+  <div class="comments"><h3>Be the first one to comment!</h3><textarea id="commentInput" rows="4" placeholder="Leave a comment..."></textarea><button class="btn btn-red" id="commentBtn">Comment</button><div id="commentsList"></div></div>
+</main>
+<div class="modal" id="signinModal" aria-hidden="true"><div class="modal-card"><button class="close" data-close>&times;</button><h2>Welcome Back!</h2><form data-demo-form><label>Username</label><input required><label>Password</label><input required type="password"><button class="btn btn-green full">Sign In</button></form></div></div>
+<div class="modal" id="signupModal" aria-hidden="true"><div class="modal-card"><button class="close" data-close>&times;</button><h2>Get Started</h2><form data-demo-form><label>Full Name</label><input required><label>Username</label><input required><label>Password</label><input required type="password"><label>Confirm Password</label><input required type="password"><button class="btn btn-green full">Sign Up</button></form></div></div>
+<script src="../js/script.js"></script>
+</body></html>
